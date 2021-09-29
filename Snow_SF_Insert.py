@@ -34,5 +34,5 @@ data = [{'Custom_Field1__c': str(df.COLUMN_NAME1[i]),
         'Custom_Field3__c':str(df.COLUMN_NAME3[i]),
         'Custom_Field4__c':str(df.COLUMN_NAME4[i])} for i in df.index]    
  
-#insert into CMP Mismatch
+#insert into Custom Object
 sf.bulk.Custom_Object__c.insert(data)
